@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Warm cream background */
+    --background: 40 33% 97%;
+    --foreground: 20 10% 15%;
+
+    /* Cards with subtle warmth */
+    --card: 40 30% 99%;
+    --card-foreground: 20 10% 15%;
+
+    --popover: 40 30% 99%;
+    --popover-foreground: 20 10% 15%;
+
+    /* Terracotta primary */
+    --primary: 15 65% 50%;
+    --primary-foreground: 40 30% 98%;
+
+    /* Warm secondary */
+    --secondary: 35 25% 92%;
+    --secondary-foreground: 20 10% 20%;
+
+    /* Muted tones */
+    --muted: 35 20% 94%;
+    --muted-foreground: 20 10% 45%;
+
+    /* Gold accent for rewards/discounts */
+    --accent: 42 80% 55%;
+    --accent-foreground: 20 10% 10%;
+
+    /* Success green */
+    --success: 145 60% 40%;
+    --success-foreground: 40 30% 98%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 40 30% 98%;
+
+    --border: 35 25% 88%;
+    --input: 35 25% 88%;
+    --ring: 15 65% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 40 30% 96%;
+    --sidebar-foreground: 20 10% 25%;
+    --sidebar-primary: 15 65% 50%;
+    --sidebar-primary-foreground: 40 30% 98%;
+    --sidebar-accent: 35 25% 92%;
+    --sidebar-accent-foreground: 20 10% 20%;
+    --sidebar-border: 35 25% 88%;
+    --sidebar-ring: 15 65% 50%;
+  }
+
+  .dark {
+    --background: 20 15% 8%;
+    --foreground: 40 20% 95%;
+
+    --card: 20 15% 10%;
+    --card-foreground: 40 20% 95%;
+
+    --popover: 20 15% 10%;
+    --popover-foreground: 40 20% 95%;
+
+    --primary: 15 65% 55%;
+    --primary-foreground: 20 15% 8%;
+
+    --secondary: 20 15% 15%;
+    --secondary-foreground: 40 20% 95%;
+
+    --muted: 20 15% 18%;
+    --muted-foreground: 40 15% 60%;
+
+    --accent: 42 80% 55%;
+    --accent-foreground: 20 10% 10%;
+
+    --success: 145 60% 45%;
+    --success-foreground: 20 15% 8%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 40 20% 95%;
+
+    --border: 20 15% 18%;
+    --input: 20 15% 18%;
+    --ring: 15 65% 55%;
+    
+    --sidebar-background: 20 15% 10%;
+    --sidebar-foreground: 40 20% 95%;
+    --sidebar-primary: 15 65% 55%;
+    --sidebar-primary-foreground: 20 15% 8%;
+    --sidebar-accent: 20 15% 15%;
+    --sidebar-accent-foreground: 40 20% 95%;
+    --sidebar-border: 20 15% 18%;
+    --sidebar-ring: 15 65% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
