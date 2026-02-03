@@ -1,6 +1,6 @@
 # Design Decisions
 
-This document captures key architectural and implementation decisions made while building the Atelier ecommerce store.
+This document captures key architectural and implementation decisions made while building the UniBloxzon ecommerce store.
 
 ---
 
@@ -94,7 +94,7 @@ This document captures key architectural and implementation decisions made while
 
 **Why:**
 - Differentiates from generic AI aesthetics—feels like a curated boutique
-- Terracotta (`hsl(15, 65%, 50%)`) is warm and inviting, appropriate for a store called "Atelier"
+- Terracotta (`hsl(15, 65%, 50%)`) is warm and inviting, appropriate for a store called "UniBloxzon"
 - Gold accent (`hsl(42, 80%, 55%)`) creates visual hierarchy for discount/reward elements
 - Cream background (`hsl(40, 33%, 97%)`) is easier on the eyes than pure white
 - Trade-off: Less "corporate" feel, which is intentional for this demo but might not suit B2B applications
